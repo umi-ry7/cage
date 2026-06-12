@@ -5,6 +5,9 @@ on:
         pull_request:
                 branches: [master]
 
+permissions:
+        contents: read
+
 env:
         WLROOTS_VERSION: "0.20"
         ALPINE_PACKAGES: "build-base xcb-util-wm-dev libseat-dev clang git eudev-dev mesa-dev libdrm-dev libinput-dev libxkbcommon-dev pixman-dev wayland-dev meson wayland-protocols xwayland-dev scdoc-doc hwdata libdisplay-info-dev"
